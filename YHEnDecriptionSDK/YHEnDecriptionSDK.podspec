@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHEnDecriptionSDK'
-  s.version          = '2.0.1'
+  s.version          = '2.0.2'
   s.summary          = '易惠基础加密组件'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YHEnDecriptionSDK/Classes/*.{h,m}'
+  s.source_files = 'YHEnDecriptionSDK/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'YHEnDecriptionSDK' => ['YHEnDecriptionSDK/Assets/*.png']
