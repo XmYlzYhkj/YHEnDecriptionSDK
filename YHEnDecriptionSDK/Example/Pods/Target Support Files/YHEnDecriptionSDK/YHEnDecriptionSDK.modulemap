@@ -1,0 +1,6 @@
+framework module YHEnDecriptionSDK {
+  umbrella header "YHEnDecriptionSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
