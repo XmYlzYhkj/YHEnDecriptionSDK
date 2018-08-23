@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YHEnDecriptionSDK'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = '易惠基础加密组件'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '易惠基础加密组件'
+  s.description      = '易惠基础加密组件，内部通用'
 
   s.homepage         = 'https://github.com/XmYlzYhkj/YHEnDecriptionSDK.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
