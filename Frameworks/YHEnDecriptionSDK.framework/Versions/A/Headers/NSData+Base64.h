@@ -28,7 +28,7 @@ char *YktNewBase64Encode(
 
 @interface NSData (Base64)
 
-+ (NSData *)dataFromBase64String:(NSString *)aString;
-- (NSString *)base64EncodedString;
++ (NSData *)yh_dataFromBase64String:(NSString *)aString;
+- (NSString *)yh_base64EncodedString;
 
 @end

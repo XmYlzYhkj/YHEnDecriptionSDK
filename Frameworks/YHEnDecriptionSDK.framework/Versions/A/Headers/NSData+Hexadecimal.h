@@ -11,9 +11,9 @@
 @interface NSData (Hexadecimal)
 
 //十六进制字符串转换成NSData
-+ (NSData *)dataFromHexadecimalString:(NSString *)aString;
++ (NSData *)yh_dataFromHexadecimalString:(NSString *)aString;
 
 //NSData的十六进制的字符串
-- (NSString *)hexadecimalString;
+- (NSString *)yh_hexadecimalString;
 
 @end
