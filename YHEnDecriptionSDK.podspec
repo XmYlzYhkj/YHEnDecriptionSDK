@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "YHEnDecriptionSDK"
-  s.version      = "2.0.8"
+  s.version      = "2.1.0"
   s.summary      = "公司基础SDK之一"
 
   s.description  = "基础SDK之一，提供加密、解密、签名、验证签名。"
@@ -20,7 +20,20 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   
   s.xcconfig = { 'OTHER_LDFLAGS' => '-lstdc++' }
+
+  s.default_subspec = 'EncryptFull'
   
-  s.vendored_frameworks = ["Frameworks/YHEnDecriptionSDK.framework"]
+  ##---------------FULL subspec------------##
+  s.subspec 'EncryptFull' do |ss|
+      ss.vendored_frameworks = ["Frameworks/EncryptFull/YHEnDecriptionSDK.framework"]
+  end
+  
+    
+  ##-----------EncryptAES subspec-------##
+  s.subspec 'EncryptAES' do |ss|
+    ss.vendored_frameworks = ["Frameworks/EncryptAES/YHEnDecriptionSDK.framework"]
+    ss.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'YHEnDecriptionExcludingSM=1'}
+  end
+
   
 end
